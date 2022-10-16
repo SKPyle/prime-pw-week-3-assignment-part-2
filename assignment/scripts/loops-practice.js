@@ -28,7 +28,7 @@ for (let i = 3; i<6; i++){
 //   - Which part of the example loop do you need to change to do this?
 
 console.log('even numbers are');
-for (let i = 2; i < 10 ; i += 2 ) {
+for (let i = 2; i <= 10 ; i += 2 ) {
    console.log(i);
 }
 console.log('count even numbers from 2 to 10 (2, 4, 6, 8, 10):');
@@ -44,10 +44,10 @@ console.log('---- 2. For Of loop ----');
 let stars = ['Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb']
 
 // 2.a. TODO: Write a for of loop to console.log each star in the 'stars' array
-for (let i = 0; i>stars.length; i++);{
-  console.log('Some stars:',);
-  console.log(stars);
+for (let star of stars){
+  console.log(star);
 }
+
 
 
 
@@ -63,15 +63,15 @@ let starsLength = stars.length;
 while(i < starsLength ) {
    let val = stars[i];
    i++;
-   console.log(stars);
+   console.log(val);
 }
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
 console.log('counting from 0 to 5');
 
-
-while (i < 6) {
-  console.log('the number is' , i);
-  i++;
+let k = 0;
+while (k < 6) {
+  console.log('the number is' , k);
+  k++;
   
 }
 
@@ -80,9 +80,9 @@ while (i < 6) {
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
 console.log('count backwards from 10 to 5');
 
-let j = 11;
-while (j !== 5) {
-  document.writeln("<p>" + j + "</p>");
-  j = j - 1;
+
+let j = 10;
+while (j >= 5) {
   console.log(j);
+  j--;
 }
